@@ -15,7 +15,7 @@ public class Program {
                 "9261238851", 145000, 28);
 
         for (Staff staff : staffArray) {
-            if (staff.getAge() > 40) staff.staffInfo();
+            if (staff.getAge() > 40) System.out.println(staff.toString());
         }
     }
 }

@@ -21,10 +21,11 @@ public class Staff {
         return age;
     }
 
-    public void staffInfo() {
-        System.out.printf("Сотрудник: %s\nДолжность: %s\nemail: %s\nНомер телефона: %s\nЗарплата: %d\nВозраст: %d\n",
-                name, position, email, phoneNumber, salary, age);
-        System.out.println();
+    @Override
+    public String toString() {
+        return "Сотрудник: " + name + "\nДолжность: " + position +
+                "\nemail: " + email + "\nНомер телефона: " + phoneNumber + "\nЗарплата: " +
+                salary + "\nВозраст: " + age + "\n";
     }
 
 

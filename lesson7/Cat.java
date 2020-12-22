@@ -15,8 +15,6 @@ public class Cat {
         if(p.isAnyFood(appetite) && !satiety) {
             p.decreaseFood(appetite);
             satiety = true;
-        } else {
-            satiety = false;
         }
         info();
     }
